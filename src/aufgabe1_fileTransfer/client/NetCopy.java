@@ -51,7 +51,10 @@ public class NetCopy {
         Socket clientSocket = new Socket(hostname, PORT);
         BufferedReader from = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
 
-        System.out.println(from.readLine());
+        //System.out.println(from.readLine());
+        PrintWriter writer = new PrintWriter("response.txt", "UTF-8");
+        writer.println(from.readLine());
+        writer.close();
 
 
     }
