@@ -24,6 +24,7 @@ public class KingslakeClient {
             BufferedReader from = new BufferedReader(new InputStreamReader(clientSocked.getInputStream()));
 
             for(String line = from.readLine(); line != null; line = from.readLine()){
+                if(line.equals("\0")) break;
                 System.out.println(line);
             }
 
