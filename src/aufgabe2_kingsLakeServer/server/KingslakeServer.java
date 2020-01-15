@@ -29,6 +29,7 @@ public class KingslakeServer {
             to.println("*" + inputWord + "*");
             wordLength--;
         }
+        to.print("\0");
         to.flush();
 
       } catch (Exception e) {

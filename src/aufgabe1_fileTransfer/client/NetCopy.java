@@ -53,7 +53,10 @@ public class NetCopy {
 
         //System.out.println(from.readLine());
         PrintWriter writer = new PrintWriter("response.txt", "UTF-8");
-        writer.println(from.readLine());
+
+        for(String line = from.readLine(); line != null; line = from.readLine()){
+            writer.println(line);
+        }
         writer.close();
     }
 
@@ -77,7 +80,7 @@ public class NetCopy {
                 Scanner sc = new Scanner(file);
 
                 while (sc.hasNext()) {
-                    to.write(sc.nextLine());
+                    to.println(sc.nextLine());
                 }
                 to.flush();
 
