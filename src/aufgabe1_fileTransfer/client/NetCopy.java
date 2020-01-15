@@ -55,8 +55,6 @@ public class NetCopy {
         PrintWriter writer = new PrintWriter("response.txt", "UTF-8");
         writer.println(from.readLine());
         writer.close();
-
-
     }
 
     /**
@@ -80,8 +78,8 @@ public class NetCopy {
 
                 while (sc.hasNext()) {
                     to.write(sc.nextLine());
-                    to.flush();
                 }
+                to.flush();
 
                 return true;
 
