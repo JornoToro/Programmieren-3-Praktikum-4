@@ -14,7 +14,7 @@ import java.net.Socket;
  * @version 2019-12-19
  */
 public class HTTPRequest{
-    private static final int PORT = 57777;
+    private static final int PORT = 8080;
     
     public static void main(String... args) throws IOException
     {

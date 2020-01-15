@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - HTTPRequest",
+            "request": "launch",
+            "mainClass": "aufgabe3_colorPage.client.HTTPRequest",
+            "projectName": "Programmieren-3-Praktikum-4_394e2fd1"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - NanoWebserver",
+            "request": "launch",
+            "mainClass": "aufgabe3_colorPage.server.NanoWebserver",
+            "projectName": "Programmieren-3-Praktikum-4_394e2fd1"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - MultiThreadedKingslakeServer",
             "request": "launch",
             "mainClass": "aufgabe2_kingsLakeServer.server.MultiThreadedKingslakeServer",
