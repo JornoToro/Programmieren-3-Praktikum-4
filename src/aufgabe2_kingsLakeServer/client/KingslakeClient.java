@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.net.Socket;
+import java.util.Scanner;
 
 /**
  * KingslakeClient
@@ -18,7 +19,10 @@ public class KingslakeClient {
             Socket clientSocked = new Socket("localhost", PORT);
 
             PrintWriter to = new PrintWriter(new OutputStreamWriter(clientSocked.getOutputStream()));
-            to.println("hi");
+
+            Scanner scanner = new Scanner(System.in);  // Create a Scanner object
+
+            to.println(scanner.nextLine());
             to.flush();
 
             BufferedReader from = new BufferedReader(new InputStreamReader(clientSocked.getInputStream()));
