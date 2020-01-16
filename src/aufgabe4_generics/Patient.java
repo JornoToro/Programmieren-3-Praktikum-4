@@ -29,4 +29,10 @@ public class Patient<T extends Disease> {
     public T getDisease() {
         return (T) patient;
     }
+
+    public Patient<T> visit(Doctor<Disease> doctor){
+
+
+        return null;
+    }
 }
