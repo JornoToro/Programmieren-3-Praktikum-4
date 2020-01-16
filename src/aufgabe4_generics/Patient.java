@@ -5,16 +5,28 @@ import aufgabe4_generics.diseases.*;
  * Patient
  */
 public class Patient<T extends Disease> {
+    // Erster Ansatz
+ /*    
     private T disease;
 
-    public void sicken(T disease) {
+    public T sicken(T disease) {
         this.disease = disease;
-        //return (T) this;
+        return (T) this;
     }
 
     public T getDisease() {
         return this.disease;
     }
+*/
 
+    private T patient;
 
+    public T sicken(T disease) {
+        this.patient = disease;
+        return patient;
+    }
+
+    public T getDisease() {
+        return (T) patient;
+    }
 }
