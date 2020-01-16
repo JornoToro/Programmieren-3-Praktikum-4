@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Hospital",
+            "request": "launch",
+            "mainClass": "aufgabe4_generics.Hospital",
+            "projectName": "Programmieren-3-Praktikum-4_394e2fd1"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - HTTPRequest",
             "request": "launch",
             "mainClass": "aufgabe3_colorPage.client.HTTPRequest",
