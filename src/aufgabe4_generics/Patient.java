@@ -18,7 +18,7 @@ public class Patient<T extends Disease> {
         return this.disease;
     }
 */
-
+    //! 1. Aufgabe
     private T patient;
 
     public T sicken(T disease) {
