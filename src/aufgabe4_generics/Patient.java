@@ -17,7 +17,7 @@ public class Patient<T extends Disease> {
         return (T) patient;
     }
 
-    public Patient<T> visit(Doctor<Disease> doctor){
+    public Patient<T> visit(Doctor<? super T> doctor){
 
 
         return null;

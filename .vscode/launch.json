@@ -6,6 +6,22 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - NetCopy",
+            "request": "launch",
+            "mainClass": "aufgabe1_fileTransfer.client.NetCopy",
+            "projectName": "Programmieren-3-Praktikum-4_394e2fd1",
+            "args": "localhost"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - NetCopy",
+            "request": "launch",
+            "mainClass": "aufgabe1_fileTransfer.server.NetCopy",
+            "projectName": "Programmieren-3-Praktikum-4_394e2fd1",
+            "args": "hello.txt"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Hospital",
             "request": "launch",
             "mainClass": "aufgabe4_generics.Hospital",
@@ -51,22 +67,6 @@
             "name": "Debug (Launch) - Current File",
             "request": "launch",
             "mainClass": "${file}"
-        },
-        {
-            "type": "java",
-            "name": "Debug (Launch)-NetCopy<Programmieren-3-Praktikum-4_394e2fd1>",
-            "request": "launch",
-            "mainClass": "aufgabe1_fileTransfer.client.NetCopy",
-            "projectName": "Programmieren-3-Praktikum-4_394e2fd1",
-            "args": "localhost"
-        },
-        {
-            "type": "java",
-            "name": "Debug (Launch)-NetCopy<Programmieren-3-Praktikum-4_394e2fd1>(1)",
-            "request": "launch",
-            "mainClass": "aufgabe1_fileTransfer.server.NetCopy",
-            "projectName": "Programmieren-3-Praktikum-4_394e2fd1",
-            "args": "hello.txt"
         }
     ]
 }
